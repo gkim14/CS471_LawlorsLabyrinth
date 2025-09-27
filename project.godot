@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Lawlor's Labyrinth"
-run/main_scene="uid://yldodekd0tgo"
+run/main_scene="uid://2m8g2mrsvx35"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
 [display]
 
-window/size/viewport_height=1152
+window/size/viewport_width=800
+window/size/viewport_height=800
 window/stretch/mode="canvas_items"
 
 [input]
