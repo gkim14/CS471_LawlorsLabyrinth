@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://chqh44o6fn8ep"]
+[gd_scene load_steps=3 format=3 uid="uid://chqh44o6fn8ep"]
 
 [ext_resource type="Texture2D" uid="uid://q7xfblvq1r1s" path="res://assets/maze.png" id="1_tqvdc"]
+[ext_resource type="PackedScene" uid="uid://fpxqq4c0mdh5" path="res://scenes/Exit.tscn" id="2_my7j6"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
@@ -14,3 +15,7 @@ polygon = PackedVector2Array(0, 1, 0, -61, 63, -61, 63, -123, 249, -123, 249, -1
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-3, -307)
 polygon = PackedVector2Array(-1, 0, 185, 0, 185, 62, 193, 62, 193, 1, 309, 1, 309, 179, 185, 178, 185, 241, 131, 240, 131, 125, 254, 125, 254, 55, 247, 55, 247, 117, 131, 116, 131, 55, 123, 55, 123, 116, 7, 116, 7, 63, 69, 63, 69, 55, -2, 54, -3, 179, -116, 179, -116, 125, -56, 125, -56, 116, -125, 117, -126, 179, -187, 179, -187, 186, 7, 186, 7, 125, 122, 125, 123, 247, 184, 249, 185, 312, 194, 312, 194, 188, 308, 188, 309, 304, 255, 303, 254, 241, 246, 241, 247, 311, 310, 311, 309, 613, 131, 612, 132, 559, 255, 560, 255, 550, 123, 550, 123, 614, 61, 612, 61, 621, 316, 622, 316, -7, -1, -7)
+
+[node name="Exit" parent="." instance=ExtResource("2_my7j6")]
+position = Vector2(-30.999998, -313)
+scale = Vector2(2.2596624, 0.89303666)
