@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgb3ai0et2vj4"]
+
+[ext_resource type="PackedScene" uid="uid://chqh44o6fn8ep" path="res://scenes/Maze1.tscn" id="1_f5x84"]
+[ext_resource type="PackedScene" uid="uid://yldodekd0tgo" path="res://scenes/Player.tscn" id="2_432n0"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Maze1" parent="." instance=ExtResource("1_f5x84")]
+scale = Vector2(3.1030068, 3.1030068)
+
+[node name="Player" parent="." instance=ExtResource("2_432n0")]
+position = Vector2(99, 1090)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, 4)
+zoom = Vector2(0.315, 0.315)
