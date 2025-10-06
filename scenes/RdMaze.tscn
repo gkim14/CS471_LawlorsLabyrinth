@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dm8rcdlqgfam1"]
 
-[ext_resource type="Script" uid="uid://cnplqph8rba6t" path="res://scenes/rd_maze.gd" id="1_i63wj"]
+[ext_resource type="Script" uid="uid://cnplqph8rba6t" path="res://scripts/rd_maze.gd" id="1_i63wj"]
 [ext_resource type="TileSet" uid="uid://dcw6qt150n12c" path="res://assets/RdMaze.tres" id="2_i63wj"]
 
 [node name="RdMaze" type="Node2D"]
