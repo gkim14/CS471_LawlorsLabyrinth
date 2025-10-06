@@ -86,4 +86,4 @@ func make_maze():
 			unvisited.erase(current)
 		elif stack:
 			current = stack.pop_back()
-		#await get_tree().process_frame
+		await get_tree().process_frame
