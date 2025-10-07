@@ -18,10 +18,10 @@ func _ready():
 	add_exit()
 
 func add_player():
-	var rd = rng.randi_range(0, 14)
+	var rd = rng.randi_range(1, 15)
 	Map.set_cell(Vector2i(0,rd), source_id, Vector2i(0,0), player_id)
 
 func add_exit():
-	var rd = rng.randi_range(0, 14)
+	var rd = rng.randi_range(1, 15)
 	Map.set_cell(Vector2i(14, rd), source_id, Vector2i(0,0), exit_id)
 	

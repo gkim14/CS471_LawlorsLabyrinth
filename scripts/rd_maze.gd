@@ -62,12 +62,12 @@ func make_maze():
 	# fill the map with solid tiles
 	Map.clear()
 	for x in range(width):
-		for y in range(height):
+		for y in range(1, height+1):
 			var pos = Vector2i(x, y)
 			unvisited.append(pos)
 			Map.set_cell(pos, source_id, atlus_coords[15])
 			wall_data[pos] = 15
-	var current = Vector2i(0, 0)
+	var current = Vector2i(0, 1)
 	unvisited.erase(current)
 	# execute recursive backtracker algorithm
 	while unvisited:
