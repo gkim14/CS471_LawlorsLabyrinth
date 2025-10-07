@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cchknxue45sre"]
+[gd_scene load_steps=7 format=3 uid="uid://cchknxue45sre"]
 
 [ext_resource type="PackedScene" uid="uid://dm8rcdlqgfam1" path="res://scenes/RdMaze.tscn" id="1_elqb8"]
+[ext_resource type="Script" uid="uid://dp16b6cgyjask" path="res://scripts/Level1.gd" id="1_rarhs"]
 [ext_resource type="PackedScene" uid="uid://csl5gj8r6i4ko" path="res://scenes/MazeAddon.tscn" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://bvctpnbtxg0gb" path="res://scenes/PauseMenu.tscn" id="3_0bbpv"]
 
@@ -10,6 +11,7 @@ font_size = 30
 [sub_resource type="LabelSettings" id="LabelSettings_vcsgt"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_rarhs")
 
 [node name="RdMaze" parent="." instance=ExtResource("1_elqb8")]
 
