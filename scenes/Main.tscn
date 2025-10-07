@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://cchknxue45sre"]
+
+[ext_resource type="PackedScene" uid="uid://dm8rcdlqgfam1" path="res://scenes/RdMaze.tscn" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://csl5gj8r6i4ko" path="res://scenes/MazeAddon.tscn" id="2_rvslj"]
+[ext_resource type="PackedScene" uid="uid://bvctpnbtxg0gb" path="res://scenes/PauseMenu.tscn" id="3_0bbpv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rarhs"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_vcsgt"]
+
+[node name="Main" type="Node2D"]
+
+[node name="RdMaze" parent="." instance=ExtResource("1_elqb8")]
+
+[node name="MazeAddon" parent="." instance=ExtResource("2_rvslj")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+follow_viewport_scale = 0.001
+
+[node name="PauseMenu" parent="UI" instance=ExtResource("3_0bbpv")]
+visible = false
+
+[node name="LevelName" type="Label" parent="UI"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 20.0
+offset_right = 50.0
+offset_bottom = 62.0
+grow_horizontal = 2
+text = "Level 1"
+label_settings = SubResource("LabelSettings_rarhs")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EscHint" type="Label" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -50.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 33.0
+grow_horizontal = 0
+text = "Press ESC for menu"
+label_settings = SubResource("LabelSettings_vcsgt")
+horizontal_alignment = 1
+vertical_alignment = 1
