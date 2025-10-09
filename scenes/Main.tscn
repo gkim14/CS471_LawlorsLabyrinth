@@ -32,7 +32,6 @@ offset_top = 20.0
 offset_right = 50.0
 offset_bottom = 62.0
 grow_horizontal = 2
-text = "Level 1"
 label_settings = SubResource("LabelSettings_rarhs")
 horizontal_alignment = 1
 vertical_alignment = 1

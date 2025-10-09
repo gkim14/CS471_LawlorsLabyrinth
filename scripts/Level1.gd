@@ -1,10 +1,11 @@
 extends Node2D
 
 @onready var pause_menu = $UI/PauseMenu
+@onready var level = $UI/LevelName
 
 func _ready():
 	pause_menu.visible = false
-	
+	level.text = "Level " + str(Global.level_count)
 	pause_menu.resume_game.connect(_on_resume)
 	pause_menu.open_tutorial.connect(_on_open_tutorial)
 	pause_menu.restart_game.connect(_on_restart)
