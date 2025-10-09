@@ -18,10 +18,14 @@ func _ready():
 	add_exit()
 
 func add_player():
-	var rd = rng.randi_range(1, 15)
-	Map.set_cell(Vector2i(0,rd), source_id, Vector2i(0,0), player_id)
+	if Global.new_level:
+		var rd = rng.randi_range(1, 15)
+		Global.player_pos = Vector2i(0,rd)
+	Map.set_cell(Global.player_pos, source_id, Vector2i(0,0), player_id)
 
 func add_exit():
-	var rd = rng.randi_range(1, 15)
-	Map.set_cell(Vector2i(14, rd), source_id, Vector2i(0,0), exit_id)
+	if Global.new_level:
+		var rd = rng.randi_range(1, 15)
+		Global.exit_pos = Vector2i(14,rd)
+	Map.set_cell(Global.exit_pos, source_id, Vector2i(0,0), exit_id)
 	

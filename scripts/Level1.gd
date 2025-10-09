@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var pause_menu = $UI/PauseMenu
 @onready var level = $UI/LevelName
+@onready var addon = $MazeAddon
 
 func _ready():
 	pause_menu.visible = false
@@ -36,7 +37,12 @@ func _on_open_tutorial():
 	
 func _on_restart():
 	get_tree().paused = false
-	get_tree().reload_current_scene()
+	Global.new_level = false
+	pause_menu.visible = false
+	var current_node = get_tree().current_scene.get_node("MazeAddon")
+	var new_node = preload("res://scenes/MazeAddon.tscn").instantiate()
+	get_tree().current_scene.remove_child(current_node)
+	get_tree().current_scene.add_child(new_node)
 	
 func _on_exit_to_start():
 	get_tree().paused = false
