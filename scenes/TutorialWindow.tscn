@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cd8fp17oyvk3x"]
 
-[ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/TutorialWindow.gd" id="1_h8r7d"]
+[ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/tutorial_window.gd" id="1_h8r7d"]
 
 [node name="TutorialWindow" type="Control"]
 process_mode = 3

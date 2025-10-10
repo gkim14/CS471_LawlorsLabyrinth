@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://fpxqq4c0mdh5" path="res://scenes/Exit.tscn" id="1_c4nf7"]
 [ext_resource type="PackedScene" uid="uid://yldodekd0tgo" path="res://scenes/Player.tscn" id="2_su57o"]
-[ext_resource type="Script" uid="uid://clll0qoa4a7ew" path="res://scripts/MazeAddon.gd" id="3_e4kb7"]
+[ext_resource type="Script" uid="uid://clll0qoa4a7ew" path="res://scripts/maze_addon.gd" id="3_e4kb7"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_r2qtq"]
 scenes/1/scene = ExtResource("1_c4nf7")

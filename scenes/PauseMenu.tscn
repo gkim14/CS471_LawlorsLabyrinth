@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bvctpnbtxg0gb"]
 
-[ext_resource type="Script" uid="uid://g2hvmbsdjgfg" path="res://scripts/PauseMenu.gd" id="1_nov15"]
+[ext_resource type="Script" uid="uid://g2hvmbsdjgfg" path="res://scripts/pause_menu.gd" id="1_nov15"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jvnd5"]
 font_size = 30
@@ -48,7 +48,7 @@ text = "Resume"
 
 [node name="TutorialButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Tutorial"
+text = "Intro"
 
 [node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2

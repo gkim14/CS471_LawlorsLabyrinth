@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bk5eagspv6c5j"]
 
-[ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/StartScreen.gd" id="1_4vrcr"]
+[ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
 font_size = 30
@@ -49,7 +49,8 @@ text = "Play"
 
 [node name="TutorialButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Tutorial"
+text = "Intro
+"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
