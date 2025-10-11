@@ -67,7 +67,7 @@ func make_maze():
 			unvisited.append(pos)
 			Map.set_cell(pos, source_id, atlus_coords[15])
 			wall_data[pos] = 15
-	var current = Vector2i(0, 1)
+	var current = Global.player_pos
 	unvisited.erase(current)
 	# execute recursive backtracker algorithm
 	while unvisited:
