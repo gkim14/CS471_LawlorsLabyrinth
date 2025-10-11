@@ -9,6 +9,7 @@ size = Vector2(118, 117)
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 process_mode = 1
 scale = Vector2(0.33817232, 0.36461204)
+collision_layer = 3
 script = ExtResource("2_3li8b")
 metadata/_edit_group_ = true
 

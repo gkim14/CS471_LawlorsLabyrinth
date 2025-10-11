@@ -6,7 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yhnsb"]
 
 [node name="Exit" type="Area2D"]
+scale = Vector2(0.93254894, 0.93254894)
 script = ExtResource("1_c4vl1")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.919158, 0.919158)

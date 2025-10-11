@@ -5,6 +5,8 @@ extends Node2D
 @onready var addon = $MazeAddon
 
 func _ready():
+	if Global.game_over:
+		_on_exit_to_start()
 	pause_menu.visible = false
 	level.text = "Level " + str(Global.level_count)
 	pause_menu.resume_game.connect(_on_resume)

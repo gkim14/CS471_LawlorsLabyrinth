@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://csl5gj8r6i4ko"]
+[gd_scene load_steps=7 format=3 uid="uid://csl5gj8r6i4ko"]
 
 [ext_resource type="PackedScene" uid="uid://fpxqq4c0mdh5" path="res://scenes/Exit.tscn" id="1_c4nf7"]
 [ext_resource type="PackedScene" uid="uid://yldodekd0tgo" path="res://scenes/Player.tscn" id="2_su57o"]
 [ext_resource type="Script" uid="uid://clll0qoa4a7ew" path="res://scripts/maze_addon.gd" id="3_e4kb7"]
+[ext_resource type="PackedScene" uid="uid://m4npw65g45fi" path="res://scenes/Lawlor.tscn" id="4_su57o"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_r2qtq"]
 scenes/1/scene = ExtResource("1_c4nf7")
 scenes/2/scene = ExtResource("2_su57o")
+scenes/3/scene = ExtResource("4_su57o")
 
 [sub_resource type="TileSet" id="TileSet_dolph"]
 tile_size = Vector2i(64, 64)
@@ -16,4 +18,7 @@ sources/0 = SubResource("TileSetScenesCollectionSource_r2qtq")
 script = ExtResource("3_e4kb7")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_dolph")
+
+[node name="Lawlor" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_dolph")
