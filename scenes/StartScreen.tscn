@@ -27,11 +27,11 @@ color = Color(0, 0, 0, 1)
 [node name="TextureRect" type="TextureRect" parent="ColorRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.947
-anchor_bottom = 0.8880001
+anchor_right = 1.008
+anchor_bottom = 1.0
 offset_top = 40.000008
-offset_right = 1090.88
-offset_bottom = 1130.688
+offset_right = 1032.3201
+offset_bottom = 1016.0
 scale = Vector2(0.47952163, 0.47952163)
 texture = ExtResource("2_pswtb")
 
