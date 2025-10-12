@@ -1,21 +1,21 @@
 extends Control
 
 @onready var play_button = $CenterContainer/VBoxContainer/PlayButton
-@onready var tutorial_button = $CenterContainer/VBoxContainer/TutorialButton
+@onready var instructions_button = $CenterContainer/VBoxContainer/InstructionsButton
 @onready var quit_button = $CenterContainer/VBoxContainer/QuitButton
 
 func _ready():
 	play_button.pressed.connect(_on_play_pressed)
-	tutorial_button.pressed.connect(_on_tutorial_pressed)
+	instructions_button.pressed.connect(_on_instructions_pressed)
 	quit_button.pressed.connect(_on_quit_pressed)
 	
 func _on_play_pressed():
 	Global.game_over = false
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
 	
-func _on_tutorial_pressed():
-	var tutorial = preload("res://scenes/TutorialWindow.tscn").instantiate()
-	get_tree().root.add_child(tutorial)
+func _on_instructions_pressed():
+	var instructions = preload("res://scenes/InstructionsWindow.tscn").instantiate()
+	get_tree().root.add_child(instructions)
 	
 func _on_quit_pressed():
 	get_tree().quit()

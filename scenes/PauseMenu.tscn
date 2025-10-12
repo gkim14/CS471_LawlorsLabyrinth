@@ -46,9 +46,9 @@ vertical_alignment = 1
 layout_mode = 2
 text = "Resume"
 
-[node name="TutorialButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Intro"
+text = "Instructions"
 
 [node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2

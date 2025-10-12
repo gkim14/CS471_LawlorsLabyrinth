@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://cd8fp17oyvk3x"]
 
-[ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/tutorial_window.gd" id="1_h8r7d"]
+[ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/instructions_window.gd" id="1_1bwer"]
 
-[node name="TutorialWindow" type="Control"]
+[node name="InstructionsWindow" type="Control"]
 process_mode = 3
 custom_minimum_size = Vector2(350, 250)
 layout_mode = 3
@@ -15,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_h8r7d")
+script = ExtResource("1_1bwer")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -51,16 +51,18 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
-text = "[b]How To Play[/b]
+text = "[center][b]How To Play[/b][/center]
 
-Use the arrow keys or WASD to move.
-Reach the goal to advance levels!
+Objective:
+Complete as many levels as you can without getting caught by Lawlor!
+
+Controls: 
+Use arrow keys or WASD to move.
 
 "
 fit_content = true
 scroll_active = false
-autowrap_mode = 0
-horizontal_alignment = 1
+autowrap_mode = 1
 vertical_alignment = 1
 
 [node name="CloseButton" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
