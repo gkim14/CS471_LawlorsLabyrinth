@@ -24,11 +24,18 @@ func _physics_process(_delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		Global.game_over = true
-		print("game over")
-		get_tree().reload_current_scene.call_deferred()
+		_handle_game_over()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		Global.game_over = true
-		print("gameover")
-		get_tree().reload_current_scene.call_deferred()
+		_handle_game_over()
+		
+func _handle_game_over():
+	Global.game_over = true	
+	get_tree().paused = true
+	
+	var game_over = preload("res://scenes/GameOver.tscn").instantiate()
+	if get_tree().current_scene.has_node("UI"):
+		get_tree().current_scene.get_node("UI").add_child(game_over)
+	else:
+		get_tree().current_scene.add_child(game_over)

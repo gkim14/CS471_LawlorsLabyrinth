@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://m4npw65g45fi"]
 
 [ext_resource type="Texture2D" uid="uid://dm7d6h10ikrlq" path="res://assets/Lawlor.png" id="1_0giwf"]
-[ext_resource type="Script" uid="uid://bls4og5a4vhd0" path="res://scenes/lawlor.gd" id="1_yi5mx"]
+[ext_resource type="Script" uid="uid://bls4og5a4vhd0" path="res://scripts/lawlor.gd" id="1_yi5mx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2an8f"]
 

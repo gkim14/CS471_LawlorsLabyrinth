@@ -1,18 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk5eagspv6c5j"]
+[gd_scene load_steps=4 format=3 uid="uid://r0evpv145223"]
 
-[ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
+[ext_resource type="Script" uid="uid://cfjmnjc5i84pu" path="res://scripts/game_over.gd" id="1_6bcno"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
+[sub_resource type="LabelSettings" id="LabelSettings_tvctj"]
 font_size = 30
 
-[node name="StartScreen" type="Control"]
+[sub_resource type="LabelSettings" id="LabelSettings_6bcno"]
+
+[node name="GameOver" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4vrcr")
+script = ExtResource("1_6bcno")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -21,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
+color = Color(0, 0, 0, 0.5019608)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -33,32 +36,26 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
-theme_override_constants/separation = 8
-alignment = 1
 
 [node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Lawlor's Labyrinth"
-label_settings = SubResource("LabelSettings_pswtb")
+text = "Game Over"
+label_settings = SubResource("LabelSettings_tvctj")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Best Score: X levels
+text = "Score: X levels
 "
+label_settings = SubResource("LabelSettings_6bcno")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="ResetButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Play"
+text = "Try Again"
 
-[node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "Instructions
-"
-
-[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
-layout_mode = 2
-text = "Quit"
+text = "Exit"

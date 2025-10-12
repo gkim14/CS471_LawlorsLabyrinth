@@ -2,13 +2,18 @@ extends Node2D
 
 @onready var pause_menu = $UI/PauseMenu
 @onready var level = $UI/LevelName
+@onready var score = $UI/Score
 @onready var addon = $MazeAddon
 
 func _ready():
-	if Global.game_over:
-		_on_exit_to_start()
 	pause_menu.visible = false
 	level.text = "Level " + str(Global.level_count)
+	
+	if Global.best_score == 1:
+		score.text = "Best score: " + str(Global.best_score) + " level"
+	else:
+		score.text = "Best score: " + str(Global.best_score) + " levels"
+		
 	pause_menu.resume_game.connect(_on_resume)
 	pause_menu.open_instructions.connect(_on_open_instructions)
 	pause_menu.restart_game.connect(_on_restart)
