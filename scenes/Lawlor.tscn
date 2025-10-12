@@ -12,7 +12,7 @@ script = ExtResource("1_yi5mx")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(0.01185285, 0.01185285)
+scale = Vector2(2.8616652, 2.8616652)
 shape = SubResource("RectangleShape2D_2an8f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -24,6 +24,7 @@ path_desired_distance = 5.0
 path_postprocessing = 1
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(2.8616652, 2.8616652)
