@@ -35,7 +35,7 @@ func add_exit():
 	Map.set_cell(Global.exit_pos, source_id, Vector2i(0,0), exit_id)
 	
 func add_lawlor():
-	await get_tree().create_timer(seconds).timeout
+	await get_tree().create_timer(seconds, false).timeout
 	LawlorLand.set_cell(Global.player_pos, source_id, Vector2i(0,0), lawlor_id)
 
 	
