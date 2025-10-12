@@ -41,10 +41,12 @@ var height = 15 # height of map (in tiles)
 
 # get a reference to the map for convenience
 @onready var Map = $TileMapLayer
+@onready var addons = get_parent().get_node("MazeAddon")
 
 func _ready():
 	randomize()
 	tile_size = Map.tile_set.tile_size
+	await addons.ready
 	make_maze()
 	
 func check_neighbors(cell, unvisited):

@@ -21,6 +21,7 @@ func _ready():
 	add_player()
 	add_exit()
 	add_lawlor()
+	emit_signal("ready")
 
 func add_player():
 	if Global.new_level:

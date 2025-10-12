@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk5eagspv6c5j"]
+[gd_scene load_steps=4 format=3 uid="uid://bk5eagspv6c5j"]
 
 [ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
+[ext_resource type="Texture2D" uid="uid://bqdcvddiigjo3" path="res://assets/Start.png" id="2_pswtb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
 font_size = 30
@@ -23,11 +24,23 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="TextureRect" type="TextureRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.947
+anchor_bottom = 0.8880001
+offset_top = 40.000008
+offset_right = 1090.88
+offset_bottom = 1130.688
+scale = Vector2(0.47952163, 0.47952163)
+texture = ExtResource("2_pswtb")
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 192.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -37,6 +50,7 @@ theme_override_constants/separation = 8
 alignment = 1
 
 [node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Lawlor's Labyrinth"
 label_settings = SubResource("LabelSettings_pswtb")
