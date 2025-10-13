@@ -35,19 +35,19 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 ### Option 1: Run from Godot
 
-1. **Clone the repository:**
+1. **Install dependencies**:
+   - [Godot Engine](https://godotengine.org/) (ver. 4.5)
+   - [Git](https://git-scm.com/)
+
+2. **Clone the repository:**
    ```bash
-   # Clone the project repository
    git clone https://github.com/gkim14/CS471_LawlorsLabyrinth.git
-   
-   # Change to project directory
-   cd CS471_LawlorsLabyrinth
    ```
-2. **Open Godot:**
+3. **Open Godot:**
    - Launch **Godot 4.5**.
    - Click **Import**, navigate to the cloned folder, and select `project.godot`.
    - Once imported, click **Run** to start the game.
-3. **(Optional):** Modify scripts, scenes, or assets directly to extend functionality.
+4. **(Optional):** Modify scripts, scenes, or assets directly to extend functionality.
 
 ### Option 2: Play the Pre-Built Executables
 If you just want to play the game without running it in Godot:
