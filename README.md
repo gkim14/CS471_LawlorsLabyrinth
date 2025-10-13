@@ -35,7 +35,7 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 ### Option 1: Run from Godot
 
-1. Install dependencies:
+1. **Install dependencies**:
   - [Godot Engine](https://godotengine.org/)
   - [Git](https://git-scm.com/)
 
