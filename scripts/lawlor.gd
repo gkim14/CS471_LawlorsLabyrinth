@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var layer: TileMapLayer = get_parent().get_parent().get_node("TileMapLayer")
 @onready var agent: NavigationAgent2D = $NavigationAgent2D
 var target
-const SPEED = 200.0
+const SPEED = 420
 
 func _ready() -> void:
 	set_physics_process(false)
