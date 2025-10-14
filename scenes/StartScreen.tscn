@@ -17,7 +17,7 @@ script = ExtResource("1_4vrcr")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -27,12 +27,12 @@ color = Color(0, 0, 0, 1)
 [node name="TextureRect" type="TextureRect" parent="ColorRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.008
-anchor_bottom = 1.0
-offset_top = 40.000008
-offset_right = 1032.3201
-offset_bottom = 1016.0
-scale = Vector2(0.47952163, 0.47952163)
+anchor_right = 2.0670002
+anchor_bottom = 1.9530001
+offset_top = 32.0
+offset_right = 15.67981
+offset_bottom = 32.12793
+scale = Vector2(0.47777066, 0.47777066)
 texture = ExtResource("2_pswtb")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -40,7 +40,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 192.0
+offset_top = 152.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
 

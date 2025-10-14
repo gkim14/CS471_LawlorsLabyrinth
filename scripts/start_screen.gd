@@ -10,7 +10,7 @@ func _ready():
 		best_score.text = "Best Score: " + str(Global.best_score) + " level\n"
 	else:
 		best_score.text = "Best Score: " + str(Global.best_score) + " levels\n"
-		
+	get_window().content_scale_size = Vector2i((Global.maze_size)*64,(Global.maze_size+1)*64)
 	play_button.pressed.connect(_on_play)
 	instructions_button.pressed.connect(_on_instructions)
 	quit_button.pressed.connect(_on_quit)

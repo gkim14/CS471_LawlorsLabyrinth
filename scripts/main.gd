@@ -10,8 +10,8 @@ signal updated
 func _ready():
 	pause_menu.visible = false
 	level.text = "Level " + str(Global.level_count)
-	@warning_ignore("integer_division")
-	Global.maze_size += (Global.level_count/5)
+	if Global.level_count%5 == 0:
+		Global.maze_size += 1
 	
 	emit_signal("updated")
 	get_window().content_scale_size = Vector2i((Global.maze_size)*64,(Global.maze_size+1)*64)

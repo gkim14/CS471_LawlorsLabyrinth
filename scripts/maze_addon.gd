@@ -16,8 +16,12 @@ var rng = RandomNumberGenerator.new()
 
 @onready var Map = $TileMapLayer
 @onready var LawlorLand = $Lawlor
+@onready var main = get_parent()
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	await main.updated
+	@warning_ignore("integer_division")
+	seconds += Global.level_count/5
 	add_player()
 	add_exit()
 	add_lawlor()
