@@ -42,5 +42,4 @@ func add_exit():
 func add_lawlor():
 	await get_tree().create_timer(seconds, false).timeout
 	LawlorLand.set_cell(Global.player_pos, source_id, Vector2i(0,0), lawlor_id)
-
 	

@@ -58,6 +58,8 @@ func _on_restart():
 	get_tree().current_scene.remove_child(current_node)
 	get_tree().current_scene.add_child(new_node)
 	
+	emit_signal("updated")
+	
 func _on_exit_to_start():
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")

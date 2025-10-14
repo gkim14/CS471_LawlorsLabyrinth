@@ -19,6 +19,7 @@ func _on_reset():
 	Global.new_level = true
 	Global.level_count = 1
 	Global.curr_score = 0
+	Global.maze_size = 15
 	get_tree().reload_current_scene()
 	
 func _on_exit_to_start():

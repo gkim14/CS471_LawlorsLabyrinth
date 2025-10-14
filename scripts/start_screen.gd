@@ -20,6 +20,7 @@ func _on_play():
 	Global.new_level = true
 	Global.level_count = 1
 	Global.curr_score = 0
+	Global.maze_size = 15
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
 	
 func _on_instructions():
