@@ -1,5 +1,7 @@
 extends Node2D
 
+signal updated
+
 @onready var pause_menu = $UI/PauseMenu
 @onready var level = $UI/LevelName
 @onready var score = $UI/Score
@@ -8,6 +10,11 @@ extends Node2D
 func _ready():
 	pause_menu.visible = false
 	level.text = "Level " + str(Global.level_count)
+	@warning_ignore("integer_division")
+	Global.maze_size += (Global.level_count/5)
+	
+	emit_signal("updated")
+	get_window().content_scale_size = Vector2i((Global.maze_size)*64,(Global.maze_size+1)*64)
 	
 	if Global.best_score == 1:
 		score.text = "Best score: " + str(Global.best_score) + " level"

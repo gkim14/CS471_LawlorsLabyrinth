@@ -31,8 +31,8 @@ func add_player():
 
 func add_exit():
 	if Global.new_level:
-		var rd = rng.randi_range(1, 15)
-		Global.exit_pos = Vector2i(14,rd)
+		var rd = rng.randi_range(1, Global.maze_size)
+		Global.exit_pos = Vector2i(Global.maze_size-1,rd)
 	Map.set_cell(Global.exit_pos, source_id, Vector2i(0,0), exit_id)
 	
 func add_lawlor():

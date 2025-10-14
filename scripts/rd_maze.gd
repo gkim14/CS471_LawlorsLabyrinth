@@ -36,17 +36,22 @@ var atlus_coords = [
 ]
 
 var tile_size = 64  # tile size (in pixels)
-var width = 15 # width of map (in tiles)
-var height = 15 # height of map (in tiles)
+var width  # width of map (in tiles)
+var height  # height of map (in tiles)
 
 # get a reference to the map for convenience
 @onready var Map = $TileMapLayer
 @onready var addons = get_parent().get_node("MazeAddon")
-
+@onready	 var main = get_parent()
 func _ready():
 	randomize()
 	tile_size = Map.tile_set.tile_size
 	await addons.ready
+	await main.updated
+
+	width = Global.maze_size # width of map (in tiles)
+	height = Global.maze_size # height of map (in tiles)
+
 	make_maze()
 	
 func check_neighbors(cell, unvisited):
