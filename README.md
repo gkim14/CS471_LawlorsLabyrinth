@@ -4,7 +4,7 @@ A **top-down 2D maze survival game** built with **Godot Engine**, featuring rand
 
 ## Overview
 
-**Lawlor's Labyrinth** drops you into a shifting maze filled with danger. Each time you enter, a new maze awaits - but so does an enemy that will never stop hunting you.
+Lawlor's Labyrinth drops you into a shifting maze filled with danger. Each time you enter, a new maze awaits — but so does an enemy that will hunt you down.
 
 Your goal: **Escape as many mazes as you can before getting caught.**
 
@@ -12,7 +12,7 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 - **Randomly Generated Mazes**
 
-  Endless replayability - each level is new and unpredictable.
+  Endless replayability. Each level is new and unpredictable.
 
 - **Player-Controlled Character**
 
@@ -35,19 +35,19 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 ### Option 1: Run from Godot
 
-1. **Install dependencies**:
-   - [Godot Engine](https://godotengine.org/) (ver. 4.5)
+1. **Install dependencies:**
    - [Git](https://git-scm.com/)
+   - [Godot Engine](https://godotengine.org/) (v.4.5)
 
-2. **Clone the repository:**
+3. **Clone the repository:**
    ```bash
    git clone https://github.com/gkim14/CS471_LawlorsLabyrinth.git
    ```
-3. **Open Godot:**
+4. **Open Godot:**
    - Launch **Godot 4.5**.
    - Click **Import**, navigate to the cloned folder, and select `project.godot`.
    - Once imported, click **Run** to start the game.
-4. **(Optional):** Modify scripts, scenes, or assets directly to extend functionality.
+5. **(Optional):** Modify scripts, scenes, or assets directly to extend functionality.
 
 ### Option 2: Play the Pre-Built Executables
 If you just want to play the game without running it in Godot:
