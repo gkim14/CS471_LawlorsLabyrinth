@@ -16,8 +16,6 @@ func wait():
 	set_physics_process(true)
 	
 func _physics_process(_delta: float) -> void:
-	#if agent.is_navigation_finished():
-	#	return
 	target = layer.get_child(0)
 	agent.target_position = target.global_position
 	velocity = global_position.direction_to(agent.get_next_path_position()) * SPEED
@@ -25,13 +23,13 @@ func _physics_process(_delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		_handle_game_over()
+		handle_game_over()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
-		_handle_game_over()
+		handle_game_over()
 		
-func _handle_game_over():
+func handle_game_over():
 	Global.game_over = true	
 	get_tree().paused = true
 	

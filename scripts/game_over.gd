@@ -10,10 +10,10 @@ func _ready():
 	else:
 		score_label.text = "Score: " + str(Global.curr_score) + " levels\n"
 		
-	reset_button.pressed.connect(_on_reset)
-	exit_button.pressed.connect(_on_exit_to_start)
+	reset_button.pressed.connect(on_reset)
+	exit_button.pressed.connect(on_exit_to_start)
 	
-func _on_reset():
+func on_reset():
 	get_tree().paused = false
 	Global.game_over = false
 	Global.new_level = true
@@ -22,7 +22,7 @@ func _on_reset():
 	Global.maze_size = 15
 	get_tree().reload_current_scene()
 	
-func _on_exit_to_start():
+func on_exit_to_start():
 	get_tree().paused = false
 	Global.game_over = false
 	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")
