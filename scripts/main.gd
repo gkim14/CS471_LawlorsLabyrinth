@@ -15,7 +15,6 @@ func _ready():
 	
 	emit_signal("updated")
 	get_window().content_scale_size = Vector2i((Global.maze_size)*64,(Global.maze_size+1)*64)
-	
 	if Global.best_score == 1:
 		score.text = "Best score: " + str(Global.best_score) + " level"
 	else:

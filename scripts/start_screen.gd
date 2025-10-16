@@ -16,11 +16,12 @@ func _ready():
 	quit_button.pressed.connect(on_quit)
 	
 func on_play():
+	print("start")
 	Global.game_over = false
 	Global.new_level = true
 	Global.level_count = 1
 	Global.curr_score = 0
-	Global.maze_size = 15
+	Global.maze_size = 10
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
 	
 func on_instructions():

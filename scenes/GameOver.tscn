@@ -35,18 +35,19 @@ anchor_bottom = 1.9530001
 offset_top = 32.0
 offset_right = 15.67981
 offset_bottom = 32.12793
-scale = Vector2(0.47777066, 0.47777066)
+scale = Vector2(0.46403906, 0.46403906)
 texture = ExtResource("2_qae0b")
+expand_mode = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 256.0
-offset_top = 344.0
-offset_right = 16.0
-offset_bottom = 24.0
+offset_left = 208.0
+offset_top = 281.0
+offset_right = -32.0
+offset_bottom = -39.0
 grow_horizontal = 2
 grow_vertical = 2
 

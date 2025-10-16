@@ -51,9 +51,8 @@ func _ready():
 
 	width = Global.maze_size # width of map (in tiles)
 	height = Global.maze_size # height of map (in tiles)
-
 	make_maze()
-	
+
 func check_neighbors(cell, unvisited):
 	# returns an array of cell's unvisited neighbors
 	var list = []

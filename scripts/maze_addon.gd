@@ -24,12 +24,12 @@ func _ready():
 	seconds += Global.level_count/5
 	add_player()
 	add_exit()
-	add_lawlor()
 	emit_signal("ready")
+	add_lawlor()
 
 func add_player():
 	if Global.new_level:
-		var rd = rng.randi_range(1, 15)
+		var rd = rng.randi_range(1, Global.maze_size)
 		Global.player_pos = Vector2i(0,rd)
 	Map.set_cell(Global.player_pos, source_id, Vector2i(0,0), player_id)
 

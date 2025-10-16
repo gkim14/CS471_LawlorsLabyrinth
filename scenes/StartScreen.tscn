@@ -23,6 +23,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="ColorRect"]
 layout_mode = 1
@@ -32,8 +33,9 @@ anchor_bottom = 1.9530001
 offset_top = 32.0
 offset_right = 15.67981
 offset_bottom = 32.12793
-scale = Vector2(0.47777066, 0.47777066)
+scale = Vector2(0.46480444, 0.46480444)
 texture = ExtResource("2_pswtb")
+expand_mode = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
