@@ -24,7 +24,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mdl7e"]
-size = Vector2(115.18437, 75.12746)
+size = Vector2(115.18437, 86.98969)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 process_mode = 1
@@ -38,8 +38,8 @@ texture_filter = 1
 position = Vector2(0, -0.98851657)
 scale = Vector2(1.5610025, 1.5670167)
 sprite_frames = SubResource("SpriteFrames_mdl7e")
-animation = &"LeftRight"
+animation = &"UpDown"
 
 [node name="LeftRight" type="CollisionShape2D" parent="."]
-position = Vector2(-1.4078119, 3.954078)
+position = Vector2(-1.4078119, -1.9770399)
 shape = SubResource("RectangleShape2D_mdl7e")
