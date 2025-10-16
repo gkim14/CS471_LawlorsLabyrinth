@@ -28,18 +28,18 @@ size = Vector2(115.18437, 86.98969)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 process_mode = 1
-scale = Vector2(0.4691286, 0.50580704)
+scale = Vector2(0.44246358, 0.47705725)
 collision_layer = 2
 script = ExtResource("2_3li8b")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, -0.98851657)
+position = Vector2(0, 1.107668)
 scale = Vector2(1.5610025, 1.5670167)
 sprite_frames = SubResource("SpriteFrames_mdl7e")
 animation = &"UpDown"
 
 [node name="LeftRight" type="CollisionShape2D" parent="."]
-position = Vector2(-1.4078119, -1.9770399)
+position = Vector2(-1.4078116, 0.11914444)
 shape = SubResource("RectangleShape2D_mdl7e")
