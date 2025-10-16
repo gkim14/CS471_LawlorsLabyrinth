@@ -10,7 +10,7 @@ var tile_size = 64  # tile size (in pixels)
 var width = 15 # width of map (in tiles)
 var height = 15 # height of map (in tiles)
 
-var seconds = 5
+var seconds = 4.0
 
 var rng = RandomNumberGenerator.new()
 
@@ -20,8 +20,8 @@ var rng = RandomNumberGenerator.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	await main.updated
-	@warning_ignore("integer_division")
-	seconds += Global.level_count/5
+	if Global.level_count%5 == 0:
+		seconds += 0.5
 	add_player()
 	add_exit()
 	emit_signal("ready")
