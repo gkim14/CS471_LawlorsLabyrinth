@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bk5eagspv6c5j"]
+[gd_scene load_steps=5 format=3 uid="uid://bk5eagspv6c5j"]
 
 [ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
 [ext_resource type="Texture2D" uid="uid://bqdcvddiigjo3" path="res://assets/Start.png" id="2_pswtb"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="3_a0vbq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
 font_size = 30
@@ -59,6 +60,7 @@ alignment = 1
 [node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Lawlor's Labyrinth"
 label_settings = SubResource("LabelSettings_pswtb")
 horizontal_alignment = 1
@@ -66,6 +68,7 @@ vertical_alignment = 1
 
 [node name="Score" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Best Score: X levels
 "
 horizontal_alignment = 1
@@ -73,13 +76,16 @@ vertical_alignment = 1
 
 [node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Play"
 
 [node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Instructions
 "
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Quit"

@@ -38,7 +38,7 @@ texture_filter = 1
 position = Vector2(0, 1.107668)
 scale = Vector2(1.5610025, 1.5670167)
 sprite_frames = SubResource("SpriteFrames_mdl7e")
-animation = &"UpDown"
+animation = &"LeftRight"
 
 [node name="LeftRight" type="CollisionShape2D" parent="."]
 position = Vector2(-1.4078116, 0.11914444)

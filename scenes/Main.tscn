@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cchknxue45sre"]
+[gd_scene load_steps=8 format=3 uid="uid://cchknxue45sre"]
 
 [ext_resource type="PackedScene" uid="uid://dm8rcdlqgfam1" path="res://scenes/RdMaze.tscn" id="1_elqb8"]
 [ext_resource type="Script" uid="uid://dp16b6cgyjask" path="res://scripts/main.gd" id="1_rarhs"]
 [ext_resource type="PackedScene" uid="uid://csl5gj8r6i4ko" path="res://scenes/MazeAddon.tscn" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://bvctpnbtxg0gb" path="res://scenes/PauseMenu.tscn" id="3_0bbpv"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="5_vcsgt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rarhs"]
 font_size = 30
@@ -32,6 +33,7 @@ offset_top = 20.0
 offset_right = 50.0
 offset_bottom = 62.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_vcsgt")
 text = "Level X"
 label_settings = SubResource("LabelSettings_rarhs")
 horizontal_alignment = 1
@@ -46,6 +48,7 @@ offset_top = 10.0
 offset_right = -10.0
 offset_bottom = 33.0
 grow_horizontal = 0
+theme_override_fonts/font = ExtResource("5_vcsgt")
 text = "Press ESC for menu"
 label_settings = SubResource("LabelSettings_vcsgt")
 horizontal_alignment = 1
@@ -56,6 +59,7 @@ offset_left = 10.0
 offset_top = 10.0
 offset_right = 158.0
 offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("5_vcsgt")
 text = "Best Score: X levels"
 horizontal_alignment = 1
 vertical_alignment = 1

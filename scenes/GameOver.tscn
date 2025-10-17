@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://r0evpv145223"]
+[gd_scene load_steps=6 format=3 uid="uid://r0evpv145223"]
 
 [ext_resource type="Script" uid="uid://cfjmnjc5i84pu" path="res://scripts/game_over.gd" id="1_6bcno"]
 [ext_resource type="Texture2D" uid="uid://c112ob4jmrypu" path="res://assets/GamerOver1.png" id="2_qae0b"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="3_vuicl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tvctj"]
 font_size = 30
@@ -68,6 +69,7 @@ vertical_alignment = 1
 
 [node name="Score" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vuicl")
 text = "Score: X levels
 "
 label_settings = SubResource("LabelSettings_6bcno")
@@ -76,8 +78,10 @@ vertical_alignment = 1
 
 [node name="ResetButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vuicl")
 text = "Try Again"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vuicl")
 text = "Exit"
