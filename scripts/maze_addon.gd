@@ -21,7 +21,7 @@ var rng = RandomNumberGenerator.new()
 func _ready():
 	await main.updated
 	if Global.level_count%5 == 0:
-		seconds += 0.5
+		seconds += 1.0
 	add_player()
 	add_exit()
 	emit_signal("ready")
