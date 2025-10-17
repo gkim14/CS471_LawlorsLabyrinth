@@ -58,4 +58,5 @@ func on_restart():
 	
 func on_exit_to_start():
 	get_tree().paused = false
+	Global.maze_size = 10
 	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")

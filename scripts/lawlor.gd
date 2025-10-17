@@ -32,6 +32,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 func handle_game_over():
 	Global.game_over = true	
 	get_tree().paused = true
+	Global.maze_size = 10
 	
 	var game_over = preload("res://scenes/GameOver.tscn").instantiate()
 	if get_tree().current_scene.has_node("UI"):
