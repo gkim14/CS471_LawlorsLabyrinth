@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd8fp17oyvk3x"]
+[gd_scene load_steps=4 format=3 uid="uid://cd8fp17oyvk3x"]
 
 [ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/instructions_window.gd" id="1_1bwer"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="2_j4mpu"]
+[ext_resource type="FontFile" uid="uid://bpoqrwd33nc5j" path="res://assets/mac's Minecraft Bold.ttf" id="3_xj81n"]
 
 [node name="InstructionsWindow" type="Control"]
 process_mode = 3
@@ -50,11 +52,14 @@ alignment = 1
 [node name="Instructions" type="RichTextLabel" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("2_j4mpu")
+theme_override_fonts/bold_font = ExtResource("3_xj81n")
+theme_override_font_sizes/bold_font_size = 18
 bbcode_enabled = true
 text = "[center][b]How To Play[/b][/center]
 
 Objective:
-Complete as many levels as you can without getting caught by Lawlor!
+Complete as many levels as you can without getting      caught by Lawlor!
 
 Controls: 
 Use arrow keys or WASD to move.
@@ -67,4 +72,5 @@ vertical_alignment = 1
 
 [node name="CloseButton" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_j4mpu")
 text = "Close"
