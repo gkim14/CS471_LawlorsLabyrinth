@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bk5eagspv6c5j"]
+[gd_scene load_steps=6 format=3 uid="uid://bk5eagspv6c5j"]
 
 [ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
 [ext_resource type="Texture2D" uid="uid://bqdcvddiigjo3" path="res://assets/Start.png" id="2_pswtb"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
 font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_a0vbq"]
+font_size = 15
 
 [node name="StartScreen" type="Control"]
 layout_mode = 3
@@ -71,6 +74,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Best Score: X levels
 "
+label_settings = SubResource("LabelSettings_a0vbq")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -78,11 +82,13 @@ vertical_alignment = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../QuitButton")
 theme_override_fonts/font = ExtResource("3_a0vbq")
+theme_override_font_sizes/font_size = 15
 text = "Play"
 
 [node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_a0vbq")
+theme_override_font_sizes/font_size = 15
 text = "Instructions
 "
 
@@ -90,4 +96,5 @@ text = "Instructions
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../PlayButton")
 theme_override_fonts/font = ExtResource("3_a0vbq")
+theme_override_font_sizes/font_size = 15
 text = "Quit"

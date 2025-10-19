@@ -13,7 +13,7 @@ func _ready():
 	reset_button.grab_focus()
 	reset_button.pressed.connect(on_reset)
 	exit_button.pressed.connect(on_exit_to_start)
-	
+
 func on_reset():
 	get_tree().paused = false
 	Global.game_over = false
@@ -21,9 +21,11 @@ func on_reset():
 	Global.level_count = 1
 	Global.curr_score = 0
 	Global.maze_size = 10
-	get_tree().reload_current_scene()
 	
+	await TransitionManager.reload_scene_fade()
+
 func on_exit_to_start():
 	get_tree().paused = false
 	Global.game_over = false
-	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")
+	
+	await TransitionManager.change_scene_fade("res://scenes/StartScreen.tscn")

@@ -8,6 +8,7 @@
 font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_6bcno"]
+font_size = 15
 
 [node name="GameOver" type="Control"]
 process_mode = 3
@@ -80,10 +81,12 @@ vertical_alignment = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../ExitButton")
 theme_override_fonts/font = ExtResource("3_vuicl")
+theme_override_font_sizes/font_size = 15
 text = "Try Again"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../ResetButton")
 theme_override_fonts/font = ExtResource("3_vuicl")
+theme_override_font_sizes/font_size = 15
 text = "Exit"

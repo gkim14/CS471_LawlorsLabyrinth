@@ -54,12 +54,13 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("2_j4mpu")
 theme_override_fonts/bold_font = ExtResource("3_xj81n")
-theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/bold_font_size = 20
 bbcode_enabled = true
 text = "[center][b]How To Play[/b][/center]
 
 Objective:
-Complete as many levels as you can without getting      caught by Lawlor!
+Complete as many levels as you can without getting caught by Lawlor!
 
 Controls: 
 Use arrow keys or WASD to move.
@@ -67,10 +68,10 @@ Use arrow keys or WASD to move.
 "
 fit_content = true
 scroll_active = false
-autowrap_mode = 1
 vertical_alignment = 1
 
 [node name="CloseButton" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_j4mpu")
+theme_override_font_sizes/font_size = 15
 text = "Close"

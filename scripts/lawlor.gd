@@ -10,11 +10,11 @@ func _ready() -> void:
 	SPEED += ((Global.level_count/5)*5)
 	set_physics_process(false)
 	call_deferred("wait")
-	
+
 func wait():
 	await get_tree().physics_frame
 	set_physics_process(true)
-	
+
 func _physics_process(_delta: float) -> void:
 	target = layer.get_child(0)
 	agent.target_position = target.global_position
@@ -28,7 +28,7 @@ func _on_body_entered(body: Node2D) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		handle_game_over()
-		
+
 func handle_game_over():
 	Global.game_over = true	
 	get_tree().paused = true
@@ -38,3 +38,5 @@ func handle_game_over():
 		get_tree().current_scene.get_node("UI").add_child(game_over)
 	else:
 		get_tree().current_scene.add_child(game_over)
+	
+	await TransitionManager.fade_in_ui(game_over, 0.1)

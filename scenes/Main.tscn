@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cchknxue45sre"]
+[gd_scene load_steps=9 format=3 uid="uid://cchknxue45sre"]
 
 [ext_resource type="PackedScene" uid="uid://dm8rcdlqgfam1" path="res://scenes/RdMaze.tscn" id="1_elqb8"]
 [ext_resource type="Script" uid="uid://dp16b6cgyjask" path="res://scripts/main.gd" id="1_rarhs"]
@@ -7,9 +7,13 @@
 [ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="5_vcsgt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rarhs"]
-font_size = 30
+font_size = 25
 
 [sub_resource type="LabelSettings" id="LabelSettings_vcsgt"]
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_c01mt"]
+font_size = 15
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rarhs")
@@ -61,5 +65,6 @@ offset_right = 158.0
 offset_bottom = 33.0
 theme_override_fonts/font = ExtResource("5_vcsgt")
 text = "Best Score: X levels"
+label_settings = SubResource("LabelSettings_c01mt")
 horizontal_alignment = 1
 vertical_alignment = 1

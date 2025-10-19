@@ -15,4 +15,3 @@ func _ready():
 	instructions_button.pressed.connect(func(): emit_signal("open_instructions"))
 	restart_button.pressed.connect(func(): emit_signal("restart_game"))
 	exit_button.pressed.connect(func(): emit_signal("exit_to_start"))
-	

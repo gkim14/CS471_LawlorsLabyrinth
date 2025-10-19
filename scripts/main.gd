@@ -8,6 +8,7 @@ signal updated
 @onready var addon = $MazeAddon
 
 func _ready():
+	TransitionManager.fade_out(0.5)
 	pause_menu.visible = false
 	level.text = "Level " + str(Global.level_count)
 	if Global.level_count%5 == 0:
@@ -24,23 +25,23 @@ func _ready():
 	pause_menu.open_instructions.connect(on_instructions)
 	pause_menu.restart_game.connect(on_restart)
 	pause_menu.exit_to_start.connect(on_exit_to_start)
-		
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		toggle_pause()
-		
+
 func toggle_pause():
 	var paused := not get_tree().paused
 	get_tree().paused = paused
-	pause_menu.visible = paused
 	
 	if paused:
+		await TransitionManager.fade_in_ui(pause_menu, 0.1)
 		pause_menu.resume_button.grab_focus()
-	
+
 func on_resume():
+	await TransitionManager.fade_out_ui(pause_menu, 0.1)
 	get_tree().paused = false
-	pause_menu.visible = false
-	
+
 func on_instructions():
 	# Disable menu input while window is active
 	for button in $UI/PauseMenu/CenterContainer/VBoxContainer.get_children():
@@ -53,7 +54,9 @@ func on_instructions():
 		get_tree().current_scene.get_node("UI").add_child(instructions)
 	else:
 		get_tree().current_scene.add_child(instructions)
-		
+	
+	await TransitionManager.fade_in_ui(instructions, 0.1)
+
 func close_instructions():
 	# Enable menu input when window closes
 	for button in $UI/PauseMenu/CenterContainer/VBoxContainer.get_children():
@@ -61,7 +64,7 @@ func close_instructions():
 			button.disabled = false
 			
 	pause_menu.instructions_button.grab_focus()
-	
+
 func on_restart():
 	get_tree().paused = false
 	Global.new_level = false
@@ -72,7 +75,7 @@ func on_restart():
 	get_tree().current_scene.add_child(new_node)
 	
 	emit_signal("updated")
-	
+
 func on_exit_to_start():
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")
+	await TransitionManager.change_scene_fade("res://scenes/StartScreen.tscn")

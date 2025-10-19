@@ -6,6 +6,8 @@ extends Control
 @onready var quit_button = $CenterContainer/VBoxContainer/QuitButton
 
 func _ready():
+	call_deferred("on_ready_deferred")
+	
 	if Global.best_score == 1:
 		best_score.text = "Best Score: " + str(Global.best_score) + " level\n"
 	else:
@@ -15,16 +17,19 @@ func _ready():
 	play_button.pressed.connect(on_play)
 	instructions_button.pressed.connect(on_instructions)
 	quit_button.pressed.connect(on_quit)
-	
+
+func on_ready_deferred():
+	await TransitionManager.fade_out(0.5)
+
 func on_play():
-	print("start")
 	Global.game_over = false
 	Global.new_level = true
 	Global.level_count = 1
 	Global.curr_score = 0
 	Global.maze_size = 10
-	get_tree().change_scene_to_file("res://scenes/Main.tscn")
 	
+	await TransitionManager.change_scene_fade("res://scenes/Main.tscn")
+
 func on_instructions():
 	# Disable menu input while window is active
 	for button in $CenterContainer/VBoxContainer.get_children():
@@ -35,6 +40,8 @@ func on_instructions():
 	instructions.closed.connect(func(): close_instructions())
 	get_tree().root.add_child(instructions)
 	
+	await TransitionManager.fade_in_ui(instructions, 0.1)
+
 func close_instructions():
 	# Enable menu input when window closes
 	for button in $CenterContainer/VBoxContainer.get_children():
@@ -42,6 +49,6 @@ func close_instructions():
 			button.disabled = false
 	
 	instructions_button.grab_focus()
-	
+
 func on_quit():
 	get_tree().quit()

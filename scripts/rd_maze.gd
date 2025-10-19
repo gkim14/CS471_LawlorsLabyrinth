@@ -60,7 +60,7 @@ func check_neighbors(cell, unvisited):
 		if cell + n in unvisited:
 			list.append(cell + n)
 	return list
-	
+
 func make_maze():
 	var unvisited = []  # array of unvisited tiles
 	var stack = []
@@ -92,4 +92,3 @@ func make_maze():
 			unvisited.erase(current)
 		elif stack:
 			current = stack.pop_back()
-		#await get_tree().process_frame

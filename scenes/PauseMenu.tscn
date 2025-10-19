@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="2_g4jo0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jvnd5"]
-font_size = 30
+font_size = 25
 
 [node name="PauseMenu" type="Control"]
 process_mode = 2
@@ -39,7 +39,8 @@ layout_mode = 2
 [node name="Title" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_g4jo0")
-text = "Pause Menu"
+text = "Pause Menu
+"
 label_settings = SubResource("LabelSettings_jvnd5")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -48,20 +49,24 @@ vertical_alignment = 1
 layout_mode = 2
 focus_neighbor_top = NodePath("../ExitButton")
 theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 15
 text = "Resume"
 
 [node name="InstructionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 15
 text = "Instructions"
 
 [node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 15
 text = "Restart"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 focus_neighbor_bottom = NodePath("../ResumeButton")
 theme_override_fonts/font = ExtResource("2_g4jo0")
+theme_override_font_sizes/font_size = 15
 text = "Exit"
