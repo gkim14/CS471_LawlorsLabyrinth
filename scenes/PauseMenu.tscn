@@ -46,6 +46,7 @@ vertical_alignment = 1
 
 [node name="ResumeButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../ExitButton")
 theme_override_fonts/font = ExtResource("2_g4jo0")
 text = "Resume"
 
@@ -61,5 +62,6 @@ text = "Restart"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../ResumeButton")
 theme_override_fonts/font = ExtResource("2_g4jo0")
 text = "Exit"

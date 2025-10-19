@@ -9,7 +9,8 @@ func _ready():
 		score_label.text = "Score: " + str(Global.curr_score) + " level\n"
 	else:
 		score_label.text = "Score: " + str(Global.curr_score) + " levels\n"
-	get_window().content_scale_size = Vector2i((Global.maze_size)*64,(Global.maze_size+1)*64)
+	get_window().content_scale_size = Vector2i(10*64,11*64)
+	reset_button.grab_focus()
 	reset_button.pressed.connect(on_reset)
 	exit_button.pressed.connect(on_exit_to_start)
 	
@@ -25,5 +26,4 @@ func on_reset():
 func on_exit_to_start():
 	get_tree().paused = false
 	Global.game_over = false
-	Global.maze_size = 10
 	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")

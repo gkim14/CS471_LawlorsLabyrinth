@@ -34,16 +34,33 @@ func toggle_pause():
 	get_tree().paused = paused
 	pause_menu.visible = paused
 	
+	if paused:
+		pause_menu.resume_button.grab_focus()
+	
 func on_resume():
 	get_tree().paused = false
 	pause_menu.visible = false
 	
 func on_instructions():
+	# Disable menu input while window is active
+	for button in $UI/PauseMenu/CenterContainer/VBoxContainer.get_children():
+		if button is Button:
+			button.disabled = true
+	
 	var instructions = preload("res://scenes/InstructionsWindow.tscn").instantiate()
+	instructions.closed.connect(func(): close_instructions())
 	if get_tree().current_scene.has_node("UI"):
 		get_tree().current_scene.get_node("UI").add_child(instructions)
 	else:
 		get_tree().current_scene.add_child(instructions)
+		
+func close_instructions():
+	# Enable menu input when window closes
+	for button in $UI/PauseMenu/CenterContainer/VBoxContainer.get_children():
+		if button is Button:
+			button.disabled = false
+			
+	pause_menu.instructions_button.grab_focus()
 	
 func on_restart():
 	get_tree().paused = false
@@ -58,5 +75,4 @@ func on_restart():
 	
 func on_exit_to_start():
 	get_tree().paused = false
-	Global.maze_size = 10
 	get_tree().change_scene_to_file("res://scenes/StartScreen.tscn")

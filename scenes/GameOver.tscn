@@ -78,10 +78,12 @@ vertical_alignment = 1
 
 [node name="ResetButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../ExitButton")
 theme_override_fonts/font = ExtResource("3_vuicl")
 text = "Try Again"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../ResetButton")
 theme_override_fonts/font = ExtResource("3_vuicl")
 text = "Exit"

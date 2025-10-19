@@ -76,6 +76,7 @@ vertical_alignment = 1
 
 [node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../QuitButton")
 theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Play"
 
@@ -87,5 +88,6 @@ text = "Instructions
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../PlayButton")
 theme_override_fonts/font = ExtResource("3_a0vbq")
 text = "Quit"
