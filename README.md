@@ -51,8 +51,8 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 ### Option 2: Play the Pre-Built Executables
 If you just want to play the game without running it in Godot:
-- Windows: [Download]()
-- macOS: [Download]()
+- Windows: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.exe)
+- macOS: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.dmg)
   
 Note: Unzip and run the executable inside. No installation required.
 
