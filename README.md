@@ -54,7 +54,30 @@ If you just want to play the game without running it in Godot:
 - Windows: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.exe)
 - macOS: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.dmg)
   
-Note: Unzip and run the executable inside. No installation required.
+Note: Your computer may show a warning, preventing you from opening the game. This is caused by the file being an unsigned app.
+
+**To fix (macOS):**
+1. **Double-click** the game's `.app`.
+   
+   That makes macOS remember the app's name.
+   
+2. Open **System Settings** and go to **Privacy & Security**.
+3. Scroll down to the **Security** section.
+   
+   You will see something like:
+   
+   *"Lawlor's Labyrinth.app" was blocked from use because it is not from an identified developer. [Open Anyway]*
+   
+4. Click **"Open Anyway."**
+5. When the warning appears again, choose **"Open."**
+
+**To fix (Windows):**
+1. **Double-click** the game's `.exe`.
+2. When the blue **"Windows protected your PC"** window appears:
+   - Click **"More info."**
+   - Then click **"Run anyway."**
+
+This ensures the game will run normally from now on for both platforms.
 
 ## Project Structure
 ```bash
