@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bk5eagspv6c5j"]
 
 [ext_resource type="Script" uid="uid://6kxm4iekpak" path="res://scripts/start_screen.gd" id="1_4vrcr"]
-[ext_resource type="Texture2D" uid="uid://bqdcvddiigjo3" path="res://assets/Start.png" id="2_pswtb"]
-[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="3_a0vbq"]
+[ext_resource type="Texture2D" uid="uid://bqdcvddiigjo3" path="res://assets/images/Start.png" id="2_pswtb"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/fonts/mac's Extended Minecraft.ttf" id="3_a0vbq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pswtb"]
 font_size = 30

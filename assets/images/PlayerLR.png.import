@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm7d6h10ikrlq"
-path="res://.godot/imported/Lawlor.png-152c3b7feb7c3a449a92f3ea75adfc47.ctex"
+uid="uid://cd1xqji5ysdu0"
+path="res://.godot/imported/PlayerLR.png-7df0496914a0ae3f713324b465660064.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Lawlor.png"
-dest_files=["res://.godot/imported/Lawlor.png-152c3b7feb7c3a449a92f3ea75adfc47.ctex"]
+source_file="res://assets/images/PlayerLR.png"
+dest_files=["res://.godot/imported/PlayerLR.png-7df0496914a0ae3f713324b465660064.ctex"]
 
 [params]
 

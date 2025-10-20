@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvctpnbtxg0gb"]
 
 [ext_resource type="Script" uid="uid://g2hvmbsdjgfg" path="res://scripts/pause_menu.gd" id="1_nov15"]
-[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="2_g4jo0"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/fonts/mac's Extended Minecraft.ttf" id="2_g4jo0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jvnd5"]
 font_size = 25

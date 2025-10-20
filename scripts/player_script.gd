@@ -26,4 +26,9 @@ func _physics_process(_delta):
 	var input_direction = Input.get_vector("left", "right", "up", "down")
 	velocity = input_direction * speed
 	
+	if input_direction != Vector2.ZERO:
+		SoundManager.play_looping_sfx("player_move")
+	else:
+		SoundManager.stop_looping_sfx("player_move", 0.1)
+	
 	move_and_slide()

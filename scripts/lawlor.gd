@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var agent: NavigationAgent2D = $NavigationAgent2D
 var target
 var SPEED = 410
+var started_chase = false
 
 func _ready() -> void:
 	@warning_ignore("integer_division")
@@ -18,6 +19,12 @@ func wait():
 func _physics_process(_delta: float) -> void:
 	target = layer.get_child(0)
 	agent.target_position = target.global_position
+	
+	# Play chase sound when first detecting player
+	if not started_chase and target:
+		started_chase = true
+		SoundManager.play_sfx("enemy_chase")
+	
 	velocity = global_position.direction_to(agent.get_next_path_position()) * SPEED
 	move_and_slide()
 
@@ -30,6 +37,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		handle_game_over()
 
 func handle_game_over():
+	SoundManager.play_sfx("enemy_catch")
 	Global.game_over = true	
 	get_tree().paused = true
 	

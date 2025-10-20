@@ -13,12 +13,13 @@ config_version=5
 config/name="Lawlor's Labyrinth"
 run/main_scene="uid://bk5eagspv6c5j"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://assets/icon.svg"
+config/icon="uid://bqdcvddiigjo3"
 
 [autoload]
 
 Global="*res://scripts/global.gd"
 TransitionManager="*res://scripts/transition_manager.gd"
+SoundManager="*res://scripts/sound_manager.gd"
 
 [display]
 

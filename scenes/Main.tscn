@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dp16b6cgyjask" path="res://scripts/main.gd" id="1_rarhs"]
 [ext_resource type="PackedScene" uid="uid://csl5gj8r6i4ko" path="res://scenes/MazeAddon.tscn" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://bvctpnbtxg0gb" path="res://scenes/PauseMenu.tscn" id="3_0bbpv"]
-[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="5_vcsgt"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/fonts/mac's Extended Minecraft.ttf" id="5_vcsgt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rarhs"]
 font_size = 25

@@ -87,7 +87,7 @@ func make_maze():
 			wall_data[next] &= ~cell_walls[-dir]
 			Map.set_cell(current, source_id, atlus_coords[wall_data[current]])
 			Map.set_cell(next, source_id, atlus_coords[wall_data[next]])
-	
+			
 			current = next
 			unvisited.erase(current)
 		elif stack:

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://n5dm3jmtutgc"
-path="res://.godot/imported/mac's Extended Minecraft.ttf-37d24049cd0229dfc65cf7b500320305.fontdata"
+uid="uid://bpoqrwd33nc5j"
+path="res://.godot/imported/mac's Minecraft Bold.ttf-d615fb741f24b291b1a6ea03353c1a47.fontdata"
 
 [deps]
 
-source_file="res://assets/mac's Extended Minecraft.ttf"
-dest_files=["res://.godot/imported/mac's Extended Minecraft.ttf-37d24049cd0229dfc65cf7b500320305.fontdata"]
+source_file="res://assets/fonts/mac's Minecraft Bold.ttf"
+dest_files=["res://.godot/imported/mac's Minecraft Bold.ttf-d615fb741f24b291b1a6ea03353c1a47.fontdata"]
 
 [params]
 

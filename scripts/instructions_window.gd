@@ -7,6 +7,7 @@ signal closed
 func _ready():
 	close_button.grab_focus()
 	close_button.pressed.connect(on_close)
+	close_button.mouse_entered.connect(func(): SoundManager.play_sfx("ui_hover"))
 
 func on_close():
 	await TransitionManager.fade_out_ui(self, 0.1)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxvwnhetg4oab"
-path="res://.godot/imported/Exit.png-e287da7690570481f36225d38fc4103a.ctex"
+uid="uid://dm7d6h10ikrlq"
+path="res://.godot/imported/Lawlor.png-403f1ddcbf0429aa6a8ddcca4b85cafe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Exit.png"
-dest_files=["res://.godot/imported/Exit.png-e287da7690570481f36225d38fc4103a.ctex"]
+source_file="res://assets/images/Lawlor.png"
+dest_files=["res://.godot/imported/Lawlor.png-403f1ddcbf0429aa6a8ddcca4b85cafe.ctex"]
 
 [params]
 

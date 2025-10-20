@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cd8fp17oyvk3x"]
 
 [ext_resource type="Script" uid="uid://blmmfumlqfg4o" path="res://scripts/instructions_window.gd" id="1_1bwer"]
-[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/mac's Extended Minecraft.ttf" id="2_j4mpu"]
-[ext_resource type="FontFile" uid="uid://bpoqrwd33nc5j" path="res://assets/mac's Minecraft Bold.ttf" id="3_xj81n"]
+[ext_resource type="FontFile" uid="uid://n5dm3jmtutgc" path="res://assets/fonts/mac's Extended Minecraft.ttf" id="2_j4mpu"]
+[ext_resource type="FontFile" uid="uid://bpoqrwd33nc5j" path="res://assets/fonts/mac's Minecraft Bold.ttf" id="3_xj81n"]
 
 [node name="InstructionsWindow" type="Control"]
 process_mode = 3
