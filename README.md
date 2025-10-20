@@ -77,3 +77,6 @@ Built with:
 - [Godot Engine](https://godotengine.org/)
 - Custom art for menus and sprites
 - Custom scripts and maze generation logic
+- Sound effects: [Juhani Junkala](https://opengameart.org/content/512-sound-effects-8-bit-style)
+- Background music: [Juhani Junkala](https://opengameart.org/content/5-chiptunes-action)
+- Start screen music: [Tsorthan Grove](https://opengameart.org/content/doubts) licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
