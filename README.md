@@ -51,8 +51,12 @@ Your goal: **Escape as many mazes as you can before getting caught.**
 
 ### Option 2: Play the Pre-Built Executables
 If you just want to play the game without running it in Godot:
-- Windows: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.exe)
-- macOS: [Download](https://github.com/gkim14/CS471_LawlorsLabyrinth/raw/refs/heads/main/Lawlor's%20Labyrinth.dmg)
+
+[**Download the Latest Release**](https://github.com/gkim14/CS471_LawlorsLabyrinth/releases/latest)
+
+**Available Builds:**
+- **Windows:** `LawlorsLabyrinth_Windows.zip` - extract and run `Lawlor's Labyrinth.exe`.
+- **macOS:** `LawlorsLabyrinth_macOS.dmg` - open, drag the app into Applications, and run `Lawlor's Labyrinth.app`.
   
 Note: Your computer may show a warning, preventing you from opening the game. This is caused by the unsigned property of the files.
 
@@ -66,10 +70,10 @@ Note: Your computer may show a warning, preventing you from opening the game. Th
    
    You will see something like:
    
-   *"Lawlor's Labyrinth.app" was blocked from use because it is not from an identified developer. [Open Anyway]*
+   *"Lawlor's Labyrinth.app" was blocked to protect your Mac. [Open Anyway]*
    
 4. Click **"Open Anyway."**
-5. When the warning appears again, choose **"Open."**
+5. When the warning appears again, choose **"Open Anyway."**
 
 **To fix (Windows):**
 1. **Double-click** the game's `.exe`.
